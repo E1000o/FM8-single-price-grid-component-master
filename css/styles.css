@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+    position: relative;
+    height: 100VH;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "main-header"
+                         "main"
+                         "footer";
+    max-width: 635px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.main-header {
+    color: hsl(218, 22%, 67%);
+    background-color: white;
+    grid-area: main-header;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    line-height: 2.4;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 0.7em;
+    margin-bottom: 0.9em;
+}
+
+.main-title {
+    color: hsl(179, 62%, 43%);
+    font-size: 1.5rem;
+}
+
+.secondary-title {
+    color: hsl(71, 73%, 54%);
+    font-size: 1.1rem;
+}
+
+.main-header p {
+    line-height: 1.5;;
+}
+
+.main-header, .subscription, .why-us {
+    /*padding: 2.8125em 2.4375em 2.4375em 2.4375em;*/
+    padding: 1.6em 2.4375em 2.6em 2.4375em;
+}
+
+main {
+    display: grid;
+    grid-template-areas: "subscription why-us";
+}
+
+.subscription, .why-us {
+    color: white;
+}
+
+.subscription {
+    background-color: hsl(179, 62%, 43%);
+    grid-area: subscription;
+    position: relative;
+}
+
+.cost {
+    font-size: 2rem;
+    margin-right: 0.4em;
+}
+
+.frequency {
+    color: rgba(100%, 100%, 100%, 50%);
+}
+
+.subscription p:nth-child(2) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.6em;
+}
+
+.subscription p:nth-child(3) {
+    color: rgba(100%, 100%, 100%, 80%);
+}
+
+.button-link {
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 2.6em;
+    left: 2.4375em;
+    padding: 1em 5.625em;
+    border-radius: 5px;
+}
+
+.why-us {
+    background-color: #4abebd;
+    grid-area: why-us;
+}
+
+ul {
+    list-style-type: none;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
