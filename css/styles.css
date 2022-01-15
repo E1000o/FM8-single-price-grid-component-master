@@ -85,6 +85,7 @@ main {
 .cost {
     font-size: 2rem;
     margin-right: 0.4em;
+    font-weight: 700;
 }
 
 .frequency {
